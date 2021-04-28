@@ -1,0 +1,76 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: hsl(218, 22%, 67%);
+    font-family: Karla;
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: Karla;
+    src: url(../fonts/Karla/Karla-VariableFont_wght.ttf);
+}
+
+.container {
+
+    display: grid;
+    background-color: hsl(204, 43%, 93%);
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 180px 250px;
+    grid-template-areas: "sup sup"
+        "esq dir";
+    justify-content: center;
+    align-content: center;
+    padding: 50px;
+
+}
+
+.superior {
+    background-color: #FFFFFF;
+    grid-area: sup;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+    text-align: justify;
+    padding-left: 5%;
+    padding-top: 10px;
+
+}
+
+.esquerda {
+    background-color: #30B3B1;
+    grid-area: esq;
+    border-bottom-left-radius: 2%;
+    text-align: justify;
+    color: #FFFFFF;
+    padding-left: 10%;
+    padding-top: 10px;
+
+
+}
+
+.direita {
+    background-color: #4ABEBD;
+    grid-area: dir;
+    border-bottom-right-radius: 2%;
+    text-align: justify;
+    color: #FFFFFF;
+    padding-left: 10%;
+    padding-top: 10px;
+
+}
+
+.botao {
+    background: hsl(71, 73%, 54%);
+    width: 88%;
+    text-align: center;
+    border: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.botao:hover {
+    box-shadow: 0 12px 16px 0 rgba(218, 218, 218, 0.24), 0 17px 50px 0 rgba(218, 218, 218, 0.24);
+}
